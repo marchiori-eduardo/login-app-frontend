@@ -1,14 +1,23 @@
 <main>
-    <section>
-        <img/>
-        <h2></h2>
-        <button></button>
-        <div><span>or</span></div>
-        <button></button>
+    <section class="form-section">
+        <img src= "logo2.png" id="logo"/>
+        <h2> {{title}} </h2>
+        <ng-content></ng-content>  <!-- this is where the form will be injected from the parent component (login.html) -->
+        <div class="btn-wrapper">
+
+            <button class="btn-primary">{{primaryBtnText}}</button>
+            <div class="divider">
+                <div></div>
+                <span>or</span>
+                <div></div>
+            </div>
+            <button class="btn-secondary">{{secondaryBtnText}}</button>
+        
+        </div>
     </section>
 
-    <section>
+    <section class="main-section">
         <h1>You Should, Moveit!</h1>
-        <img src="gorila.png" alt="gorila"/>
+        <img src="Delivery.svg" alt="gorila"/>
     </section>
     </main>
