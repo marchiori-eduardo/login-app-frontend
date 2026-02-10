@@ -43,7 +43,7 @@ export class Signup {
   }
   
   submit() {
-    this.loginService.login(this.signupForm.value.email, this.signupForm.value.password).subscribe({
+    this.loginService.signup(this.signupForm.value.name, this.signupForm.value.email, this.signupForm.value.password).subscribe({
       next: () => this.toastr.success("Login successful"),
       error: () => this.toastr.error("Error during login")
     })
